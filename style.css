@@ -27,19 +27,13 @@ body {
     
 }
 .banner_section {
-    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('images/banner_image_2.png');
-
+    background-image:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('images/banner_image_2.png'); 
+   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /*position: relative;*/
     height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: aliceblue;
-
-}
+}  
 .navb{
     background-color: #a18345;
     color: white;
@@ -49,11 +43,7 @@ body {
 }
 .navb:hover{
     color: whitesmoke;
-    background: black;
-}
-.banner_text {
-    /* padding: 100px; */
-    width: 100%;
+    /* background: black; */
 }
 
 .banner_text h2 {
@@ -91,7 +81,7 @@ body {
     border: none;
     border-radius: 5px;
 }
-button:hover{
+.btnHover:hover{
     background-color: black;
 }
 .slideshow-container1 {
@@ -149,7 +139,7 @@ button:hover{
     margin-top: 80px;
     margin-bottom:100px;
    background-color: white;
-   padding: 100px;
+   /* padding: 100px; */
    padding-top: 180px;
 }
 
@@ -159,18 +149,10 @@ button:hover{
 .service_page{
     margin-top: 50px;
     padding-top: 120px;
-    margin: 100px;
-    height: 100vh;
-}
-.facility{
-    padding-left: 230px;
 }
 .card{
     border: none;
     box-shadow:0px 5px 17px 0px rgba(0, 0, 0, 0.07);
-}
-.card-body{
-    padding: 30px;
 }
 .card-body h4{
     font-size: 30px;
@@ -189,18 +171,17 @@ button:hover{
 .lastbtn button:hover{
     background-color: black;
 }
-.gallery_page{
-    margin: 100px;
-    padding-top: 120px;
-}
 
 .slideshow-container2 {
     position: relative;
     margin: auto;
+
 }
 
 .mySlides2 {
     display: none;
+    height: 50%;
+    width: 100%;
 }
 
 .mySlides2 img {

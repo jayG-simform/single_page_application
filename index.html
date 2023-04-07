@@ -17,7 +17,7 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navScroll" data-bs-offset="50" class="scrollspy-example" tabindex="0">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll" id="navScroll">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-scroll bg-light" id="navScroll">
         <div class="container w-100">
             <a class="navbar-brand"><img src="images/Icon.png" width="150px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,183 +25,161 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarsupportedcontent">
+            <div class="collapse navbar-collapse bg-light p-3" id="navbarsupportedcontent">
 
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <button type="button" class="nav-link navb" style="border: none;" onclick="home()">Home</button>
+                    <li class="nav-item active pb-2 me-2">
+                        <button type="button" class="nav-link navb w-100" style="border: none;"
+                            onclick="home()">Home</button>
                     </li>
-                    <li class="nav-item">
-                        <button type="button" class="nav-link navb" style="border: none;" onclick="about()">About
+                    <li class="nav-item pb-2 me-2">
+                        <button type="button" class="nav-link navb w-100" style="border: none;" onclick="about()">About
                             Us</button>
                     </li>
-                    <li class="nav-item active">
-                        <button type="button" class="nav-link navb" style="border: none;"
+                    <li class="nav-item active pb-2 me-2">
+                        <button type="button" class="nav-link navb w-100" style="border: none;"
                             onclick="Service()">Service</button>
                     </li>
-                    <li class="nav-item">
-                        <button type="button" class="nav-link navb" style="border: none;"
+                    <li class="nav-item pb-2 me-2">
+                        <button type="button" class="nav-link navb w-100" style="border: none;"
                             onclick="gallery()">Gallery</button>
-                    </li>
-                    <li class="">
-
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section id="home" class="banner_section">
+    <section id="home" class="banner_section d-flex align-items-center justify-content-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 d-flex align-items-center">
-                    <div class="banner_text col-8" data-aos="fade-right" data-aos-duration="1500">
-                        <h2>Luxury Hotel & Resort</h2><br>
-                        <h1>Redolence</h1>
-                        <br>
-                        <p class="m-0">We are proud to say Redolence Aravali Tree in Udaipur, one of the perfect venue
-                            for your special event. Whether you are planning a boutique wedding, a corporate meeting, or
-                            a social gathering, we have the facilities and expertise to make your event a success.</p>
-                        <br>
-                        <button style="width: 200px; height: 60px;">DISCOVER MORE</button>
-                    </div>
-                    <div class="slideshow-container1 ms-3">
-                        <div class="mySlides1 fade1 active">
-                            <img src="images/home.webp" style="width:500px;">
-                        </div>
-                        <div class="mySlides1 fade1">
-                            <img src="images/home1.webp" style="width:500px;">
-                        </div>
-                        <a class="prev1" onclick="plusSlides(-1)">❮</a>
-                        <a class="next1" onclick="plusSlides(1)">❯</a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <br>
-    <section id="about" class="about_page">
-        <div class="container">
-            <div class="row ">
-
-                <div class="col-lg-6 d-flex align-items-center">
-                    <div class="image p-relative wow fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s"
-                        style="visibility: visible;" animation-name="fadeInLeft">
-                        <img src="images/about2.png" height="600px" width="600px">
-
-                    </div>
-                    <div class="banner_text col-6 ms-5" data-aos="fade-right" data-aos-duration="1500">
-                        <h2>The Brand</h2><br>
-                        <h1>About Us</h1>
-                        <br>
-                        <p class="m-0"><b>Redolence Hotels & Resorts -</b> Welcome to Redolence Hotels & Resorts, a
-                            brand that is dedicated to delivering a luxurious and comfortable experience to our guests.
-                        </p>
-                        <br>
-                        <p class="m-0">Redolence Hotels & Resorts was founded with the goal of providing travelers with
-                            a sense of home away from home. We believe that a hotel should be more than just a place to
-                            sleep - it should be a place to relax, unwind, and make memories.</p>
-                        <br>
-                        <p class="m-0"><b>Redolence Aravali Tree -</b> Welcome to Redolence Aravali Tree. Located near
-                            the epicentre of Udaipur, a city rich in culture and history, Redolence Aravali Tree has
-                            been serving guests for many years and has become a beloved destination for travelers from
-                            all over the world.</p>
-                        <br>
-                        <button style="width: 200px; height: 60px;" onclick="discover()">DISCOVER MORE</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="service" class="service_page">
-        <div class="container">
-            <div class="row">
-                <div class="banner_text exp col-12">
-                    <h2>Explore</h2>
+                <div class="col-lg-7 col-md-6 col-12 mb-2 banner_text" data-aos="fade-right" data-aos-duration="1500">
+                    <h2>Luxury Hotel & Resort</h2><br>
+                    <h1>Redolence</h1>
                     <br>
-                    <h1>Services</h1>
-                    <p class="m-0 facility">Welcome to our hotel in Udaipur, where we are pleased to offer a range of
+                    <p class="m-0">We are proud to say Redolence Aravali Tree in Udaipur, one of the perfect venue
+                        for your special event. Whether you are planning a boutique wedding, a corporate meeting, or
+                        a social gathering, we have the facilities and expertise to make your event a success.</p>
+                    <br>
+                    <button style="width: 200px; height: 60px;">DISCOVER MORE</button>
+                </div>
+                <div class="slideshow-container1 col-lg-5 col-md-6 col-12">
+                    <div class="mySlides1 fade1 active">
+                        <img src="images/home.webp" style="max-width:100%;">
+                    </div>
+                    <div class="mySlides1 fade1">
+                        <img src="images/home1.webp" style="max-width:100%;">
+                    </div>
+                    <a class="prev1" onclick="plusSlides(-1)">❮</a>
+                    <a class="next1" onclick="plusSlides(1)">❯</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about_page d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-12 mb-2">
+                    <img src="images/about2.png" style="max-width: 100%;">
+                </div>
+                <div class="banner_text col-lg-7 col-md-6 col-12 mb-2">
+                    <h2>The Brand</h2><br>
+                    <h1>About Us</h1>
+                    <br>
+                    <p class="m-0"><b>Redolence Hotels & Resorts -</b> Welcome to Redolence Hotels & Resorts, a
+                        brand that is dedicated to delivering a luxurious and comfortable experience to our guests.
+                    </p>
+                    <br>
+                    <p class="m-0">Redolence Hotels & Resorts was founded with the goal of providing travelers with
+                        a sense of home away from home. We believe that a hotel should be more than just a place to
+                        sleep - it should be a place to relax, unwind, and make memories.</p>
+                    <br>
+                    <p class="m-0"><b>Redolence Aravali Tree -</b> Welcome to Redolence Aravali Tree. Located near
+                        the epicentre of Udaipur, a city rich in culture and history, Redolence Aravali Tree has
+                        been serving guests for many years and has become a beloved destination for travelers from
+                        all over the world.</p>
+                    <br>
+                    <button style="width: 200px; height: 60px;" class="btnHover" onclick="discover()">DISCOVER
+                        MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service" class="d-flex service_page align-items-center justify-content-center " style="margin-bottom: 280px;">
+        <div class="container">
+            <div class="row">
+                <div class="banner_text col-12 col-lg-12 col-md-12 col-sm-12">
+                    <h2 class="text-center">Explore</h2>
+                    <br>
+                    <h1 class="text-center">Services</h1>
+                    <p class="m-0 text-center">Welcome to our hotel in Udaipur, where we are pleased to offer a range of
                         facilities for our guests to enjoy during their stay.</p>
                 </div>
-                <div class="row gy-2 ms-5">
-                    <div class="col-sm-4">
-                        <div class="card" style="width: 22rem;">
-                            <img src="images/swimingPool.webp" class="card-img-top" alt="Mountain">
-                            <div class="card-body">
-                                <h4 class="card-title">Swiming Pool</h4>
-                                <p class="card-text">Take a dip in our rooftop swimming pool and soak up the sun on the
-                                    surrounding deck.</p>
-                            </div>
+                <div class="row mt-5 d-flex justify-content-center align-items-center gap-5">
+                    <div class="card col-12 col-md-4 p-0" style="max-width: 20rem;">
+                        <img src="images/swimingPool.webp" style="max-width: 100%;" class="card-img-top" alt="Mountain">
+                        <div class="card-body">
+                            <h4 class="card-title">Swiming Pool</h4>
+                            <p class="card-text">Take a dip in our rooftop swimming pool and soak up the sun on the
+                                surrounding deck.</p>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="card" style="width: 22rem;">
-                            <img src="images/banquet.webp" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4 class="card-title">Banquet Hall</h4>
-                                <p class="card-text">Need a space for a special event or business function? Our banquet
-                                    hall is the...</p>
-                            </div>
+                    <div class="card col-12 col-md-4 p-0" style="max-width: 20rem;">
+                        <img src="images/banquet.webp" style="max-width: 100%;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Banquet Hall</h4>
+                            <p class="card-text">Need a space for a special event or business function? Our banquet
+                                hall is the...</p>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="card" style="width: 22rem;">
-                            <img src="images/Lawn.webp" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4 class="card-title">Lawn</h4>
-                                <p class="card-text mb-4">For a more casual outdoor gathering, our lawn is the perfect
-                                    choice...</p>
-                            </div>
+                    <div class="card col-12 col-md-4 p-0" style="max-width: 20rem;">
+                        <img src="images/Lawn.webp" class="card-img-top" style="max-width: 100%;" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Lawn</h4>
+                            <p class="card-text mb-4">For a more casual outdoor gathering, our lawn is the perfect
+                                choice...</p>
                         </div>
                     </div>
                 </div>
-                <div class="lastbtn">
-                    <button style="width: 200px; height: 60px; font-size: 20px;" onclick="discover()">More
-                        Services</button>
-                </div>
-
             </div>
         </div>
     </section>
-    <section id="gallery" class="gallery_page">
+    
+    <section id="gallery" class="mb-5 d-flex align-items-center justify-content-center" >
         <div class="container">
             <div class="row">
-                <div class="col-12 align-items-center">
-                    <div class="banner_text exp col-12">
-                        <h2>The Pleasure Of Luxury</h2>
-                        <br>
-                        <h1>Our Gallery</h1>
+                <div class="banner_text col-12 col-lg-12 col-md-12" style="margin-top: 100px;">
+                    <h2 class="text-center">The Pleasure Of Luxury</h2>
+                    <br>
+                    <h1 class="text-center">Our Gallery</h1>
+                </div>
+                <div class="slideshow-container2 col-12 col-lg-12 col-sm-12 ">
+                    <div class="mySlides2 fade2 active">
+                        <img src="images/home.webp" style="width: 100%;">
+                        <div class="text">Outdoor Image</div>
                     </div>
-                    <div class="slideshow-container2 ms-3">
-                        <div class="mySlides2 fade2 active">
-                            <img src="images/home.webp">
-                            <div class="text">Outdoor Image</div>
-                        </div>
-                        <div class="mySlides2 fade2 active">
-                            <img src="images/gallery1.webp">
-                            <div class="text">Entrance Image</div>
-                        </div>
-                        <div class="mySlides2 fade2">
-                            <img src="images/gallery2.webp">
-                            <div class="text">Seating Area Image</div>
-                        </div>
-                        <div class="mySlides2 fade2">
-                            <img src="images/gallery3.webp">
-                            <div class="text">Dining area Image</div>
-                        </div>
-                        <div class="mySlides2 fade2">
-                            <img src="images/gallery4.webp">
-                            <div class="text">Badroom Image</div>
-                        </div>
-                        <a class="prev2" onclick="plusSlides1(-1)">❮</a>
-                        <a class="next2" onclick="plusSlides1(1)">❯</a>
+                    <div class="mySlides2 fade2 active">
+                        <img src="images/gallery1.webp" style="width: 100%;">
+                        <div class="text">Entrance Image</div>
                     </div>
+                    <div class="mySlides2 fade2">
+                        <img src="images/gallery2.webp" style="width: 100%;">
+                        <div class="text">Seating Area Image</div>
+                    </div>
+                    <div class="mySlides2 fade2">
+                        <img src="images/gallery3.webp" style="width: 100%;">
+                        <div class="text">Dining area Image</div>
+                    </div>
+                    <div class="mySlides2 fade2">
+                        <img src="images/gallery4.webp" style="width: 100%;">
+                        <div class="text">Badroom Image</div>
+                    </div>
+                    <a class="prev2" onclick="plusSlides1(-1)">❮</a>
+                    <a class="next2" onclick="plusSlides1(1)">❯</a>
                 </div>
             </div>
         </div>
     </section>
+    
     <section class="footer">
         <div class="footer-nav">
             <span>
